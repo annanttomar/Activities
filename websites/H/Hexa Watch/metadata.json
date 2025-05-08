@@ -1,0 +1,26 @@
+{
+    "$schema": "https://schemas.premid.app/metadata/1.13",
+    "apiVersion": 1,
+    "author": {
+      "name": "Anant",
+      "id": "629851641579044874"
+    },
+    "service": "Hexa Watch",
+    "description": {
+      "en": "Hexa Watch is a streaming platform for live and on-demand video content across various genres, including gaming, entertainment, and sports."
+    },
+    "url": "hexa.watch",
+    "regExp": "([a-z0-9-]+[.])*hexa[.]watch[/]",
+    "version": "1.0.0",
+    "logo": "https://hexa.watch/favicon.ico",
+    "thumbnail": "https://hexa.watch/favicon.ico",
+    "color": "#00aaff",
+    "category": "entertainment",
+    "tags": [
+      "streaming",
+      "live",
+      "video",
+      "entertainment"
+    ]
+  }
+  
