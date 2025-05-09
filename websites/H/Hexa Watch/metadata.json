@@ -10,16 +10,16 @@
     "en": "Hexa Watch is a streaming platform for movies and TV shows. Watch your favorite content with ease!",
     "fr": "Hexa Watch est une plateforme de streaming pour les films et les émissions de télévision. Regardez votre contenu préféré en toute simplicité!"
   },
-  "url": "https://hexa.watch",
+  "url": "www.hexa.watch",
   "regExp": "https?://(www\\.)?hexa\\.watch(/.*)?",
   "version": "1.0.0",
-  "logo": "https://cdn.rcd.gg/PreMiD/websites/H/HexaWatch/assets/icon.png",
-  "thumbnail": "https://cdn.rcd.gg/PreMiD/websites/H/HexaWatch/assets/icon.png",
+  "logo": "https://i.ibb.co/6c2kY3tv/icon.png",
+  "thumbnail": "https://i.ibb.co/6c2kY3tv/icon.png",
   "color": "#1e1e1e",
   "category": "videos",
   "tags": [
     "movies",
-    "tv shows",
+    "tv",
     "streaming"
   ]
 }
