@@ -39,7 +39,7 @@ presence.on('UpdateData', async () => {
   const buttons = await presence.getSetting<boolean>('buttons')
 
   if (pathname === '/' || pathname === '/home') {
-    presenceData.details = 'Exploring AnimeKai.to'
+    presenceData.details = 'Exploring AnimeKai'
   }
   else if (
     /\/(?:ongoing|recent|movie|new-releases|updates|tv|completed|top-upcoming|ona|ova|special|genres\/.*)/.test(
