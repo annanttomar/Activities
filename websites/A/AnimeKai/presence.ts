@@ -31,7 +31,7 @@ presence.on(
 
 presence.on('UpdateData', async () => {
   const presenceData: PresenceData = {
-    name: 'AnimeKai',
+    name: 'AnimeKAI',
     largeImageKey: ActivityAssets.Logo,
     startTimestamp: browsingTimestamp,
   }
