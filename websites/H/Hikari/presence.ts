@@ -10,7 +10,6 @@ enum ActivityAssets {
 
 presence.on('UpdateData', async () => {
   const { pathname } = document.location;
-  const pathList = pathname.split('/').filter(Boolean);
 
   const presenceData: PresenceData = {
     largeImageKey: ActivityAssets.Logo,
@@ -31,7 +30,7 @@ presence.on('UpdateData', async () => {
     presenceData.state = cleanTitle || 'Anime Episode';
 
     const video = document.querySelector<HTMLVideoElement>('video');
-    if (video && !isNaN(video.currentTime)) {
+    if (video && !Number.isNaN(video.currentTime)) {
       startTimestamp = Math.floor(Date.now() / 1000) - Math.floor(video.currentTime);
       presenceData.startTimestamp = startTimestamp;
     }
