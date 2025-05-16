@@ -38,4 +38,3 @@ function updatePresence() {
 }
 
 presence.on('UpdateData', updatePresence)
-
