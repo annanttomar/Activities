@@ -8,7 +8,19 @@ const presenceData: PresenceData = {
   largeImageKey: 'https://i.ibb.co/TBYtYzMc/940956e1-8b78-424c-ad21-3a5e687dd6b4.jpg',
 }
 
-const emojis = ['📖', '📚', '📕', '📝', '✏️', '🧠', '💡', '📘', '📙', '📗',]
+const emojis = [
+  '📖',
+  '📚',
+  '📕',
+  '📝',
+  '✏️',
+  '🧠',
+  '💡',
+  '📘',
+  '📙',
+  '📗',
+]
+
 let emojiIndex = 0
 
 let stored = sessionStorage.getItem('startTimestamp')
