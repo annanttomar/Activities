@@ -1,5 +1,5 @@
 const presence = new Presence({
-  clientId: '1350359904300564510'
+  clientId: '1350359904300564510',
 })
 
 let idleTS = sessionStorage.getItem('idleTimestamp')
@@ -24,10 +24,12 @@ function updatePresence() {
   if (isFocus) {
     presenceData.details = 'Focusing 📖'
     presenceData.state = 'for 25 min…'
-  } else if (isShortBrk || isLongBrk) {
+  }
+  else if (isShortBrk || isLongBrk) {
     presenceData.details = 'Taking a break ☕'
     presenceData.state = 'Chilling ☕'
-  } else {
+  }
+  else {
     presenceData.details = 'Idling 💤'
     presenceData.startTimestamp = idleTimestamp
   }
@@ -36,3 +38,4 @@ function updatePresence() {
 }
 
 presence.on('UpdateData', updatePresence)
+
