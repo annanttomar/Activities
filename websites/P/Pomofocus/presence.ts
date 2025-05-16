@@ -1,14 +1,14 @@
 const presence = new Presence({
-  clientId: '1350359904300564510'
+  clientId: '1350359904300564510',
 })
 
 const presenceData: PresenceData = {
   details: 'Studying...',
   state: '📖',
-  largeImageKey: 'https://i.ibb.co/TBYtYzMc/940956e1-8b78-424c-ad21-3a5e687dd6b4.jpg'
+  largeImageKey: 'https://i.ibb.co/TBYtYzMc/940956e1-8b78-424c-ad21-3a5e687dd6b4.jpg',
 }
 
-const emojis = ['📖', '📚', '📕', '📝', '✏️', '🧠', '💡', '📘', '📙', '📗']
+const emojis = ['📖', '📚', '📕', '📝', '✏️', '🧠', '💡', '📘', '📙', '📗',]
 let emojiIndex = 0
 
 let stored = sessionStorage.getItem('startTimestamp')
