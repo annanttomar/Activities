@@ -26,11 +26,13 @@ function updatePresence() {
     presenceData.details = 'Focusing 📖'
     presenceData.state = 'for 25 min…'
     delete presenceData.startTimestamp
-  } else if (isShortBrk || isLongBrk) {
+  }
+  else if (isShortBrk || isLongBrk) {
     presenceData.details = 'Taking a break ☕'
     presenceData.state = 'Chilling ☕'
     delete presenceData.startTimestamp
-  } else {
+  }
+  else {
     presenceData.details = 'Idling 💤'
     presenceData.state = ''
     presenceData.startTimestamp = idleTimestamp
