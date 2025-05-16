@@ -7,8 +7,8 @@
   },
   "service": "Pomofocus",
   "description": {
-    "en": "A minimal Pomofocus activity that shows you're studying with a rotating set of study-themed emojis and a live timer that persists as long as the tab stays open.",
-    "fr": "Une activité Pomofocus minimale qui montre que vous étudiez avec un ensemble d'emojis d'étude rotatifs et un minuteur actif tant que l'onglet reste ouvert."
+    "en": "A simple Pomodoro timer for focused work sessions.",
+    "fr": "Un minuteur Pomodoro simple pour des sessions de travail concentré."
   },
   "url": [
     "pomofocus.io",
