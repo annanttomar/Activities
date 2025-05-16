@@ -8,7 +8,6 @@ const presenceData: PresenceData = {
   largeImageKey: 'https://i.ibb.co/TBYtYzMc/940956e1-8b78-424c-ad21-3a5e687dd6b4.jpg',
 };
 
-// Persist idle timer across refreshes/navigation, reset only on tab close
 let idleTS = sessionStorage.getItem('idleTimestamp');
 if (!idleTS) {
   idleTS = String(Math.floor(Date.now() / 1000));
