@@ -8,12 +8,7 @@
   "service": "Pomofocus",
   "description": {
     "en": "A minimal Pomofocus activity that shows you're studying with a rotating set of study-themed emojis and a live timer that persists as long as the tab stays open.",
-    "es": "Una actividad mínima de Pomofocus que muestra que estás estudiando con un conjunto rotativo de emojis de estudio y un temporizador en vivo que se mantiene mientras la pestaña esté abierta.",
-    "fr": "Une activité Pomofocus minimale qui montre que vous étudiez avec un ensemble d'emojis d'étude rotatifs et un minuteur actif tant que l'onglet reste ouvert.",
-    "de": "Eine minimalistische Pomofocus-Aktivität, die zeigt, dass du lernst – mit wechselnden Lern-Emojis und einem Live-Timer, der läuft, solange der Tab geöffnet ist.",
-    "ja": "ポモフォーカスの最小限のアクティビティで、勉強中であることを示し、学習をテーマにした絵文字が循環し、タブを閉じるまでタイマーが継続します。",
-    "zh": "一个简洁的 Pomofocus 活动，展示你正在学习，配有轮换的学习主题表情符号和在标签页打开时持续运行的实时计时器。",
-    "hi": "एक सरल Pomofocus गतिविधि जो दिखाती है कि आप पढ़ाई कर रहे हैं, जिसमें अध्ययन-थीम वाले इमोजी घूमते रहते हैं और एक लाइव टाइमर तब तक चलता है जब तक टैब खुला रहता है।"
+    "fr": "Une activité Pomofocus minimale qui montre que vous étudiez avec un ensemble d'emojis d'étude rotatifs et un minuteur actif tant que l'onglet reste ouvert."
   },
   "url": [
     "pomofocus.io"
@@ -29,4 +24,3 @@
     "focus"
   ]
 }
-
