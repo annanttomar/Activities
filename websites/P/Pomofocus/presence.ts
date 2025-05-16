@@ -22,7 +22,6 @@ function updatePresence(): void {
   presenceData.state = emojis[emojiIndex];
   presenceData.startTimestamp = startTimestamp;
   presence.setActivity(presenceData);
-
   emojiIndex = (emojiIndex + 1) % emojis.length;
 }
 
