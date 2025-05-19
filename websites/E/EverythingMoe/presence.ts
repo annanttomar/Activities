@@ -5,7 +5,7 @@ const presence = new Presence({
 const startTimestamp = Math.floor(Date.now() / 1000)
 
 const ActivityAssets = {
-  Logo: 'https://cdn.rcd.gg/PreMiD/websites/E/EverythingMoe/assets/logo.png'
+  Logo: 'https://i.ibb.co/y2f0Cgd/community-Icon-yex71v3xbaad1-1.png'
 }
 
 presence.on('UpdateData', async () => {
