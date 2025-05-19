@@ -40,7 +40,7 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=donghua'):
-      presenceData.details = '🇨🇳 Looking for online Donghua Streams'
+      presenceData.details = '🇨🇳 Looking for online Donghua streams'
       presenceData.state = cleanTitle
       break
 
@@ -50,7 +50,7 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=schedule'):
-      presenceData.details = '🗓️ Looking for online anime schedule providers'
+      presenceData.details = '🗓️ Checking anime schedules'
       presenceData.state = cleanTitle
       break
 
@@ -60,7 +60,7 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=novel'):
-      presenceData.details = '📘 Looking for novels reading sources online'
+      presenceData.details = '📘 Looking for novel reading sources'
       presenceData.state = cleanTitle
       break
 
@@ -70,12 +70,12 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=tools'):
-      presenceData.details = '🛠️ Exploring tools'
+      presenceData.details = '🛠️ Exploring anime-related tools'
       presenceData.state = cleanTitle
       break
 
     case search.includes('section=utils'):
-      presenceData.details = '🔧 Exploring misc utilities'
+      presenceData.details = '🔧 Exploring miscellaneous utilities'
       presenceData.state = cleanTitle
       break
 
@@ -85,22 +85,22 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=quiz'):
-      presenceData.details = '❓ Looking for online Quizzes Sources'
+      presenceData.details = '❓ Playing anime quizzes'
       presenceData.state = cleanTitle
       break
 
     case search.includes('section=trend'):
-      presenceData.details = '📈 Looking for online anime trends stats sources'
+      presenceData.details = '📈 Viewing anime trend stats'
       presenceData.state = cleanTitle
       break
 
     case search.includes('section=game'):
-      presenceData.details = '🎮 Looking for online games sources'
+      presenceData.details = '🎮 Looking for anime-related games'
       presenceData.state = cleanTitle
       break
 
     case search.includes('section=wiki'):
-      presenceData.details = '📖 Reading guides & wikis'
+      presenceData.details = '📖 Reading wikis & guides'
       presenceData.state = cleanTitle
       break
 
@@ -110,7 +110,7 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=mobileapp'):
-      presenceData.details = '📱 Looking for free mobile streaming applications'
+      presenceData.details = '📱 Looking for mobile streaming apps'
       presenceData.state = cleanTitle
       break
 
@@ -120,23 +120,23 @@ presence.on('UpdateData', async () => {
       break
 
     case search.includes('section=amv'):
-      presenceData.details = '📺 Viewing AMVs sources'
+      presenceData.details = '📺 Watching AMVs'
       presenceData.state = cleanTitle
       break
 
     case search.includes('section=forums'):
-      presenceData.details = '💬 Browsing forums'
+      presenceData.details = '💬 Browsing anime communities'
       presenceData.state = cleanTitle
+      break
+
+    case pathname === '/post/info.html':
+      presenceData.details = '🏢 Reading about EverythingMoe'
+      presenceData.state = 'About & Info page'
       break
 
     case pathname.startsWith('/post/'):
       presenceData.details = '📰 Viewing articles'
       presenceData.state = cleanTitle || 'Articles'
-      break
-
-    case pathname === '/post/info.html':
-      presenceData.details = 'ℹ️ Reading about EverythingMoe'
-      presenceData.state = cleanTitle
       break
 
     case pathname === '/graveyard':
@@ -150,7 +150,7 @@ presence.on('UpdateData', async () => {
       break
 
     case pathname.startsWith('/s/'):
-      presenceData.details = '🔗 Viewing the listed sites'
+      presenceData.details = '🔗 Viewing a listed site'
       presenceData.state = cleanTitle
       break
 
