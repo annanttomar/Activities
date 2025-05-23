@@ -6,11 +6,11 @@ let startTimestamp = Math.floor(Date.now() / 1000)
 let previousPath: string | null = null
 
 const ActivityAssets = {
-  Logo: 'https://i.ibb.co/Y7s4FFHp/TMBW-512x512.png',
+  Logo: 'https://i.ibb.co/20BBTG5m/share-512x512.png',
 }
 
 presence.on('UpdateData', async () => {
-  const currentPath = location.pathname
+  const currentPath = document.location.pathname
 
   if (currentPath !== previousPath) {
     startTimestamp = Math.floor(Date.now() / 1000)
@@ -24,7 +24,7 @@ presence.on('UpdateData', async () => {
   ) {
     presence.setActivity({
       details: 'Browsing the homepage',
-      state: 'On the homepage',
+      state: 'Checking out featured content',
       largeImageKey: ActivityAssets.Logo,
       startTimestamp,
     })
