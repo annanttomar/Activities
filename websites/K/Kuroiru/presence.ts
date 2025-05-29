@@ -1,5 +1,5 @@
 const presence = new Presence({
-  clientId: '1371050079439425576'
+  clientId: '1371050079439425576',
 })
 
 let startTimestamp = sessionStorage.getItem('startTimestamp')
@@ -15,7 +15,7 @@ presence.on('UpdateData', async () => {
     details: '',
     state: '',
     largeImageKey: 'https://i.ibb.co/1fZY8jWs/icon-512x512.png',
-    startTimestamp: Number.parseInt(startTimestamp, 10)
+    startTimestamp: Number.parseInt(startTimestamp, 10),
   }
 
   let detailsText = 'Browsing Kuroiru'
@@ -32,30 +32,40 @@ presence.on('UpdateData', async () => {
 
     if (hash.includes('tab=streams')) {
       detailsText = 'Checking Streams'
-    } else if (hash.includes('tab=related')) {
+    } 
+    else if (hash.includes('tab=related')) {
       detailsText = 'Viewing Related Titles'
-    } else if (hash.includes('tab=music')) {
+    } 
+    else if (hash.includes('tab=music')) {
       detailsText = 'Browsing Music Info'
-    } else if (hash.includes('tab=news')) {
+    } 
+    else if (hash.includes('tab=news')) {
       detailsText = 'Reading News'
-    } else if (hash.includes('tab=read')) {
+    } 
+    else if (hash.includes('tab=read')) {
       detailsText = 'Reading Manga'
-    } else {
+    } 
+    else {
       detailsText = isAnime ? 'Reading Anime Info' : 'Reading Manga Info'
     }
 
     presenceData.state = mediaName
-  } else if (pathname === '/anime/explore') {
+  } 
+  else if (pathname === '/anime/explore') {
     detailsText = 'Exploring Anime on Kuroiru'
-  } else if (pathname === '/manga/explore') {
+  } 
+  else if (pathname === '/manga/explore') {
     detailsText = 'Exploring Manga on Kuroiru'
-  } else if (pathname === '/airing.html') {
+  } 
+  else if (pathname === '/airing.html') {
     if (search.includes('filter=upcoming')) {
       detailsText = 'Browsing Upcoming Anime'
-    } else {
+    } 
+    else {
       detailsText = 'Browsing Airing Anime'
     }
-  } else if (pathname === '/app') {
+  } 
+  else if (pathname === '/app') {
     detailsText = 'Browsing Kuroiru'
   }
 
