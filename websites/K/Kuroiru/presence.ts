@@ -32,15 +32,20 @@ presence.on('UpdateData', async () => {
 
     if (hash.includes('tab=streams')) {
       detailsText = 'Checking Streams'
-    } else if (hash.includes('tab=related')) {
+    } 
+    else if (hash.includes('tab=related')) {
       detailsText = 'Viewing Related Titles'
-    } else if (hash.includes('tab=music')) {
+    } 
+    else if (hash.includes('tab=music')) {
       detailsText = 'Browsing Music Info'
-    } else if (hash.includes('tab=news')) {
+    } 
+    else if (hash.includes('tab=news')) {
       detailsText = 'Reading News'
-    } else if (hash.includes('tab=read')) {
+    } 
+    else if (hash.includes('tab=read')) {
       detailsText = 'Reading Manga'
-    } else {
+    } 
+    else {
       detailsText = isAnime ? 'Reading Anime Info' : 'Reading Manga Info'
     }
 
