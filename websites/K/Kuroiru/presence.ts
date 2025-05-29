@@ -32,39 +32,39 @@ presence.on('UpdateData', async () => {
 
     if (hash.includes('tab=streams')) {
       detailsText = 'Checking Streams'
-    } 
+    }
     else if (hash.includes('tab=related')) {
       detailsText = 'Viewing Related Titles'
-    } 
+    }
     else if (hash.includes('tab=music')) {
       detailsText = 'Browsing Music Info'
-    } 
+    }
     else if (hash.includes('tab=news')) {
       detailsText = 'Reading News'
-    } 
+    }
     else if (hash.includes('tab=read')) {
       detailsText = 'Reading Manga'
-    } 
+    }
     else {
       detailsText = isAnime ? 'Reading Anime Info' : 'Reading Manga Info'
     }
 
     presenceData.state = mediaName
-  } 
+  }
   else if (pathname === '/anime/explore') {
     detailsText = 'Exploring Anime on Kuroiru'
-  } 
+  }
   else if (pathname === '/manga/explore') {
     detailsText = 'Exploring Manga on Kuroiru'
-  } 
+  }
   else if (pathname === '/airing.html') {
     if (search.includes('filter=upcoming')) {
       detailsText = 'Browsing Upcoming Anime'
-    } 
+    }
     else {
       detailsText = 'Browsing Airing Anime'
     }
-  } 
+  }
   else if (pathname === '/app') {
     detailsText = 'Browsing Kuroiru'
   }
