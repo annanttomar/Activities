@@ -45,17 +45,22 @@ presence.on('UpdateData', async () => {
     }
 
     presenceData.state = mediaName
-  } else if (pathname === '/anime/explore') {
+  } 
+  else if (pathname === '/anime/explore') {
     detailsText = 'Exploring Anime on Kuroiru'
-  } else if (pathname === '/manga/explore') {
+  } 
+  else if (pathname === '/manga/explore') {
     detailsText = 'Exploring Manga on Kuroiru'
-  } else if (pathname === '/airing.html') {
+  } 
+  else if (pathname === '/airing.html') {
     if (search.includes('filter=upcoming')) {
       detailsText = 'Browsing Upcoming Anime'
-    } else {
+    } 
+    else {
       detailsText = 'Browsing Airing Anime'
     }
-  } else if (pathname === '/app') {
+  } 
+  else if (pathname === '/app') {
     detailsText = 'Browsing Kuroiru'
   }
 
