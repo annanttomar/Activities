@@ -1,5 +1,5 @@
 const presence = new Presence({
-  clientId: '1371050079439425576'
+  clientId: '1371050079439425576',
 })
 
 let startTimestamp = sessionStorage.getItem('startTimestamp')
@@ -15,7 +15,7 @@ presence.on('UpdateData', async () => {
     details: '',
     state: '',
     largeImageKey: 'https://i.ibb.co/1fZY8jWs/icon-512x512.png',
-    startTimestamp: Number.parseInt(startTimestamp, 10)
+    startTimestamp: Number.parseInt(startTimestamp, 10),
   }
 
   let detailsText = 'Browsing Kuroiru'
