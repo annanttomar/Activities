@@ -1,15 +1,15 @@
 const presence = new Presence({
-  clientId: '1291708616952512613',
+  clientId: '1291708616952512613'
 });
 
 const startTimestamp = Math.floor(Date.now() / 1000);
 
 presence.on('UpdateData', () => {
-  const { pathname, hash } = document.location;
+  const { pathname } = document.location;
 
   const presenceData: PresenceData = {
-    largeImageKey: 'https://i.ibb.co/7xm4GrPh/icon-512x512-tr-512x512.png', 
-    startTimestamp,
+    largeImageKey: 'https://i.ibb.co/7xm4GrPh/icon-512x512-tr-512x512.png',
+    startTimestamp
   };
 
   const cleanTitle = document.title.replace(/\s*[-|–]\s*Miruro\s*$/i, '').trim();
