@@ -14,7 +14,7 @@ presence.on('UpdateData', async () => {
   const presenceData: PresenceData = {
     largeImageKey: 'https://i.ibb.co/1fZY8jWs/icon-512x512.png',
     startTimestamp: Number.parseInt(startTimestamp, 10),
-}
+  }
 
   let detailsText = 'Browsing Kuroiru'
   let mediaName = ''
