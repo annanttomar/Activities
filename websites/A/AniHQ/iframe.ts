@@ -1,7 +1,7 @@
 const iframe = new iFrame()
 
-setInterval(() => {
-  if (window.location.hostname === 'animestream.playerp2p.com') {
+iframe.on('UpdateData', () => {
+  if (document.location.hostname === 'animestream.playerp2p.com') {
     const video = document.querySelector<HTMLVideoElement>(
       '#media-player .jw-media video',
     )
@@ -16,4 +16,4 @@ setInterval(() => {
       })
     }
   }
-}, 500)
+})
